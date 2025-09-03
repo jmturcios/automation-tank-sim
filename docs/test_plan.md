@@ -33,3 +33,40 @@ python tank_monitor.py
 | T08 | Zero Cycles                 | Enter `0`                           | No cycles run; program exits politely |
 | T09 | Large Cycles Boundary       | Enter `5`                           | Completes 5 cycles; then stops |
 | T10 | No Double Count at Empty    | Watch transitions at 0%             | Cycle increments once per drain, no duplicates |
+
+## Detailed Test Procedures
+
+### T01 — Fill to Full
+1. Run the program.
+2. When prompted, enter `1` for cycles.
+**Expected:** Tank level increases step-by-step (10, 20 … 100). At 100, prints overflow alarm and switches to draining.
+
+---
+
+### T02 — Drain to Empty
+1. Continue running after T01 without stopping.
+**Expected:** Tank decreases step-by-step (90, 80 … 0). At 0, prints "Tank Empty" and restarts filling (or stops if cycle count is reached).
+
+---
+
+### T03 — Fixed Cycle Count
+1. Run the program.
+2. Enter `2` when prompted for cycles.
+**Expected:** The system completes exactly two full cycles (fill + drain) then shuts down with a message: "System shutting down after 2 cycles."
+
+---
+
+### T04 — STOP During Fill
+1. Run the program.
+2. Enter `5` when prompted for cycles.
+3. While tank is filling (e.g., 30–60%), type `STOP`.
+**Expected:** Program shuts down immediately with "Emergency Stop pressed. Shutting down system."
+
+---
+
+### T05 — STOP During Drain
+1. Run the program.
+2. Enter `5` when prompted for cycles.
+3. Wait until draining begins.
+4. Type `STOP`.
+**Expected:** Program shuts down immediately with "Emergency Stop pres
