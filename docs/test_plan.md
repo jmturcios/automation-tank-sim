@@ -70,3 +70,30 @@ python tank_monitor.py
 3. Wait until draining begins.
 4. Type `STOP`.
 **Expected:** Program shuts down immediately with "Emergency Stop pres
+
+---
+
+## Test Execution Log
+
+Use this table to record results as you run each case.  
+Suggested statuses: **Pass / Fail / Blocked / Pending**.
+
+| Date (YYYY-MM-DD) | Tester | Test ID | Status  | Notes / Evidence (timestamp lines, screenshots, commit hash) |
+|-------------------|--------|---------|---------|---------------------------------------------------------------|
+|                   |        | T01     |         |                                                               |
+|                   |        | T02     |         |                                                               |
+|                   |        | T03     |         |                                                               |
+|                   |        | T04     |         |                                                               |
+|                   |        | T05     |         |                                                               |
+|                   |        | T06     |         |                                                               |
+|                   |        | T07     |         |                                                               |
+|                   |        | T08     |         |                                                               |
+|                   |        | T09     |         |                                                               |
+|                   |        | T10     |         |                                                               |
+
+### Evidence Tips
+- Copy short console snippets with timestamps (e.g., `12:03:15 Tank Filling: 100%`).
+- If you add screenshots, place them in `docs/evidence/` and reference like: `docs/evidence/T03_run1.png`.
+- If a bug is found, note the **expected vs actual** and the step where it occurred.
+
+
