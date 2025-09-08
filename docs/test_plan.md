@@ -85,6 +85,16 @@ python tank_monitor.py
 
 ---
 
+### T06 — PAUSE/RESUME
+1. Run the program.
+2. Enter `3` when prompted for cycles.
+3. During fill or drain, type `PAUSE`.
+4. Confirm tank level does not change while paused.
+5. Type `RESUME`.
+**Expected:** Program resumes from the same level and continues normal operation.
+**Evidence:**  
+![T06 Evidence](docs/evidence/T06_pause_resume.png)
+
 ## Test Execution Log
 
 Use this table to record results as you run each case.  
