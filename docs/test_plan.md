@@ -49,6 +49,9 @@ python tank_monitor.py
 ### T02 — Drain to Empty
 1. Continue running after T01 without stopping.
 **Expected:** Tank decreases step-by-step (90, 80 … 0). At 0, prints "Tank Empty" and restarts filling (or stops if cycle count is reached).
+**Evidence:**  
+![T02 Evidence](docs/evidence/Screenshot%202025-09-08%20094320.png)
+
 
 ---
 
