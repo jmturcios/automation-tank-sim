@@ -70,6 +70,9 @@ python tank_monitor.py
 2. Enter `5` when prompted for cycles.
 3. While tank is filling (e.g., 30–60%), type `STOP`.
 **Expected:** Program shuts down immediately with "Emergency Stop pressed. Shutting down system."
+**Evidence:**  
+![T04 Evidence](docs/evidence/T04_stop.png)
+
 
 ---
 
