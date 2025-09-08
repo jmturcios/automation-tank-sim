@@ -40,6 +40,9 @@ python tank_monitor.py
 1. Run the program.
 2. When prompted, enter `1` for cycles.
 **Expected:** Tank level increases step-by-step (10, 20 … 100). At 100, prints overflow alarm and switches to draining.
+**Evidence:**  
+![T01 Evidence](docs/evidence/Screenshot%202025-09-08%20093839.png)
+
 
 ---
 
