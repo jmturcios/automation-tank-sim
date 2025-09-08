@@ -81,7 +81,7 @@ python tank_monitor.py
 2. Enter `5` when prompted for cycles.
 3. Wait until draining begins.
 4. Type `STOP`.
-**Expected:** Program shuts down immediately with "Emergency Stop pres
+**Expected:** Program shuts down immediately with "Emergency Stop pressed. Shutting down system."
 ![T05 Evidence](docs/evidence/T05_stop_drain.png)
 
 ---
