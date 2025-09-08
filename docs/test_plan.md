@@ -41,7 +41,7 @@ python tank_monitor.py
 2. When prompted, enter `1` for cycles.
 **Expected:** Tank level increases step-by-step (10, 20 … 100). At 100, prints overflow alarm and switches to draining.
 **Evidence:**  
-![T01 Evidence](docs/evidence/Screenshot%202025-09-08%20093839.png)
+![T01 Evidence](docs/evidence/T01_Fill.png)
 
 
 ---
@@ -50,7 +50,7 @@ python tank_monitor.py
 1. Continue running after T01 without stopping.
 **Expected:** Tank decreases step-by-step (90, 80 … 0). At 0, prints "Tank Empty" and restarts filling (or stops if cycle count is reached).
 **Evidence:**  
-![T02 Evidence](docs/evidence/Screenshot%202025-09-08%20094320.png)
+![T02 Evidence](docs/evidence/T02_drain.png)
 
 
 ---
@@ -60,7 +60,7 @@ python tank_monitor.py
 2. Enter `2` when prompted for cycles.
 **Expected:** The system completes exactly two full cycles (fill + drain) then shuts down with a message: "System shutting down after 2 cycles."
 **Evidence:**  
-![T03 Evidence](docs/evidence/<your-screenshot-file>.png)
+![T03 Evidence](docs/evidence/T03_Cycles.png)
 
 
 ---
@@ -71,7 +71,7 @@ python tank_monitor.py
 3. While tank is filling (e.g., 30–60%), type `STOP`.
 **Expected:** Program shuts down immediately with "Emergency Stop pressed. Shutting down system."
 **Evidence:**  
-![T04 Evidence](docs/evidence/T04_stop.png)
+![T04 Evidence](docs/evidence/T04_Stop.png)
 
 
 ---
@@ -82,6 +82,7 @@ python tank_monitor.py
 3. Wait until draining begins.
 4. Type `STOP`.
 **Expected:** Program shuts down immediately with "Emergency Stop pres
+![T05 Evidence](docs/evidence/T05_stop_drain.png)
 
 ---
 
