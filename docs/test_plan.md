@@ -59,6 +59,9 @@ python tank_monitor.py
 1. Run the program.
 2. Enter `2` when prompted for cycles.
 **Expected:** The system completes exactly two full cycles (fill + drain) then shuts down with a message: "System shutting down after 2 cycles."
+**Evidence:**  
+![T03 Evidence](docs/evidence/<your-screenshot-file>.png)
+
 
 ---
 
